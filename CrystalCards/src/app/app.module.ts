@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import {SecurityModule} from "./security/security.module";
+import {ComponentsModule} from "./components/components.module";
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    SecurityModule,
+    ComponentsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
